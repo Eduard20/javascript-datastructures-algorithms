@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "JavaScript Algorithms and Data Structures",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint --fix ./src ",
+    "prettier": "npx prettier --check ./src"
   },
   "husky": {
     "hooks": {
