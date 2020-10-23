@@ -1,0 +1,22 @@
+{
+  "name": "javascript-datastructures-algorithms",
+  "version": "1.0.0",
+  "description": "JavaScript Algorithms and Data Structures",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eduard20/javascript-datastructures-algorithms.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Eduard Simonyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eduard20/javascript-datastructures-algorithms/issues"
+  },
+  "homepage": "https://github.com/Eduard20/javascript-datastructures-algorithms#readme"
+}
