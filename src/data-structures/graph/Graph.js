@@ -34,6 +34,27 @@ class Graph {
 
     return result;
   }
+
+  dfs(start) {
+    const stack = [start];
+    const visited = new Map();
+    const result = [];
+    visited.set(start, true);
+
+    while (stack.length) {
+      const currentVertex = stack.pop();
+      result.push(currentVertex);
+
+      this.adjacencyList.get(currentVertex)?.forEach((neighbor) => {
+        if (!visited.get(neighbor)) {
+          visited.set(neighbor, true);
+          stack.push(neighbor);
+        }
+      });
+    }
+
+    return result;
+  }
 }
 
 module.exports = Graph;
