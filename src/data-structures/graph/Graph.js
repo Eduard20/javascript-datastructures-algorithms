@@ -18,15 +18,15 @@ class Graph {
     const queue = [vertex];
     const result = [];
     const visited = new Map();
-    visited[vertex] = true;
+    visited.set(vertex, true);
 
     while (queue.length) {
       const current = queue.shift();
       result.push(current);
 
       this.adjacencyList.get(current)?.forEach((neighbor) => {
-        if (!visited[neighbor]) {
-          visited[neighbor] = true;
+        if (!visited.get(neighbor)) {
+          visited.set(neighbor, true);
           queue.push(neighbor);
         }
       });
